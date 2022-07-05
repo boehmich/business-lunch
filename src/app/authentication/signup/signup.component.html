@@ -1,0 +1,67 @@
+<mat-card>
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <form *ngIf="!isLoading" (submit)="onSignup(signupForm)" #signupForm="ngForm">
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        placeholder="Vorname"
+        name="firstname"
+        ngModel
+        #firstnameInput="ngModel"
+        required
+        autocomplete="off">
+      <mat-error *ngIf="firstnameInput.invalid">Gib bitte eine Vornamen ein.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        placeholder="Nachname"
+        name="surname"
+        ngModel
+        #surnameInput="ngModel"
+        required
+        autocomplete="off">
+      <mat-error *ngIf="surnameInput.invalid">Gib bitte einen Nachnamen ein.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="email"
+        placeholder="Email"
+        name="email"
+        ngModel
+        #emailInput="ngModel"
+        required
+        email
+        autocomplete="off">
+      <mat-error *ngIf="emailInput.invalid">Gib bitte eine gültige Email ein.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        type="password"
+        matInput
+        placeholder="Passwort"
+        name="password"
+        ngModel
+        #passwordInput="ngModel"
+        required
+        autocomplete="off">
+      <mat-error *ngIf="passwordInput.invalid">Gib bitte ein gültiges Passwort ein.</mat-error>
+    </mat-form-field>
+    <div>
+      <input
+        type="checkbox"
+        name="isAdmin"
+        ngModel
+        id="isAdmin">
+      <label for="isAdmin">Administrator</label>
+    </div>
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      *ngIf="!isLoading">Signup</button>
+  </form>
+</mat-card>

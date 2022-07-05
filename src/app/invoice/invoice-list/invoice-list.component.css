@@ -1,0 +1,88 @@
+.container-main{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  padding: 1rem 0 0.5rem 0;
+}
+mat-spinner{
+  margin: auto;
+  width: 100%;
+}
+mat-list{
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.mat-list-base .mat-list-item{
+  width: 100%;
+  height: 100%;
+}
+
+.container-list-element{
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+mat-label{
+  padding: 1rem;
+}
+
+h2{
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+p{
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.date{
+  margin: 0;
+  font-style: italic;
+}
+
+mat-icon{
+  font-size: 1rem;
+}
+
+.container-icon-button{
+  padding-right: 1rem;
+}
+
+.icon-button{
+  color: rgba(0,0,0,0.5);
+  font-size: 1.3rem;
+}
+
+button {
+  background-color: cadetblue;
+  text-align: center;
+  margin-left: 0.5rem;
+}
+
+.div-image{
+  width: 100%;
+  align-self: flex-start;
+  padding: 2rem 2rem 2rem 0;
+}
+
+.div-image mat-icon{
+  font-size: 1.2rem;
+  float: right;
+}
+
+.div-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow:1px 1px 10px 2px;
+}
