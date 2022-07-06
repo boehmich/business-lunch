@@ -1,7 +1,7 @@
 # Business Lunch Invoice Manager
 
 ## About the App
-This app is to help me manage my business meal bills.
+This app is to help me manage my business meal invoices.
 It should be possible to save the invoices with the restaurant, the amount, the date and a photo of the invoice. The creator should have the possibility to change the data. 
 
 ### Frontend
